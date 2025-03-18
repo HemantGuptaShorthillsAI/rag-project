@@ -43,7 +43,7 @@ class RAGChatbot:
         return response["message"]["content"]
 
     def run_chatbot(self):
-        st.set_page_config(page_title="StartuPedia", layout="wide")
+        st.set_page_config(page_title="StartuPedia!", layout="wide")
         st.sidebar.title("Chat History")
         
         if "chat_history" not in st.session_state:
