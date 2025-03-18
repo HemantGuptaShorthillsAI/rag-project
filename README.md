@@ -4,6 +4,8 @@
 This project involves scraping unicorn startup information from Wikipedia, extracting relevant details, storing the extracted data, embedding it into a vector database (Weaviate), and using a retrieval-augmented generation (RAG) pipeline with a chatbot for querying the stored information. Additionally, the chatbot responses are evaluated using various NLP metrics.
 Project Components
 
+**Project Architecture**
+ ![Screenshot](assets/Project_architecture.png)
 
 **1. Web Scraping**
   - **Purpose:**
@@ -70,6 +72,8 @@ Project Components
      - model.encode(user_input): Converts the user query into an embedding. 
      - documents.query.near_vector(): Retrieves relevant text from Weaviate. 
      - ollama.chat(): Generates a response using Llama 3. 
+  - **UI Screenshot:**
+    ![Screenshot](assets/ui_screenshot.png)
 
 
 **4. Evaluation Pipeline**
