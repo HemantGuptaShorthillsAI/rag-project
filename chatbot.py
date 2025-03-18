@@ -43,7 +43,7 @@ class RAGChatbot:
         return response["message"]["content"]
 
     def run_chatbot(self):
-        st.set_page_config(page_title="RAG Chatbot", layout="wide")
+        st.set_page_config(page_title="StartuPedia", layout="wide")
         st.sidebar.title("Chat History")
         
         if "chat_history" not in st.session_state:
@@ -53,7 +53,7 @@ class RAGChatbot:
         for i, chat in enumerate(st.session_state.chat_history):
             st.sidebar.write(f"{i+1}. {chat['user']}")
         
-        st.title("RAG Chatbot")
+        st.title("StartuPedia")
         user_input = st.text_input("Ask a question:")
         
         if user_input:
