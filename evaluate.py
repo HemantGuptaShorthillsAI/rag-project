@@ -100,7 +100,7 @@ class RAGEvaluator:
 
 # Example usage:
 if __name__ == "__main__":
-    WEAVIATE_URL="https://wm3dtb9mqooxlzl0yp0ag.c0.asia-southeast1.gcp.weaviate.cloud"
-    WEAVIATE_API_KEY="jBm4pMt7E4Mh4PHGdH3zShw0PRmoHWPB4nl8"
+    WEAVIATE_URL="https://s2umskuhqz23dftu3da19g.c0.asia-southeast1.gcp.weaviate.cloud"
+    WEAVIATE_API_KEY="uT1gw7iS9ncKF14lDqDmByDXeWLXwa1rI76p"
     evaluator = RAGEvaluator(WEAVIATE_URL,WEAVIATE_API_KEY)
     evaluator.run_evaluation()
