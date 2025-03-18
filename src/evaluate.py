@@ -9,6 +9,7 @@ from sentence_transformers import util
 
 class RAGEvaluator:
     def __init__(self, weaviate_url, weaviate_api_key, dataset_path="../assets/golden_dataset.json"):
+        self.weaviate_url = weaviate_url
         self.weaviate_api_key = weaviate_api_key
         self.dataset_path = dataset_path
         self.model = self.load_model()
@@ -84,7 +85,7 @@ class RAGEvaluator:
                     "Semantic Similarity": scores["Semantic Similarity"]
                 })
                 
-                with open("../assets/evaluation_results.json", "w", encoding="utf-8") as f:
+                with open("../assets/evaluate.json", "w", encoding="utf-8") as f:
                     json.dump(results, f, indent=4)
                     f.flush()
                     f.close()
