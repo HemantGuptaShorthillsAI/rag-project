@@ -6,7 +6,7 @@ import json
 from weaviate.classes.init import Auth
 from huggingface_hub import login
 
-LOG_FILE = "assets/chat_log.json"
+LOG_FILE = "../assets/chat_log.json"
 
 class RAGChatbot:
     def __init__(self, huggingface_token, weaviate_url, weaviate_api_key):

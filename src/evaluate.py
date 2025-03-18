@@ -8,7 +8,7 @@ from weaviate.classes.init import Auth
 from sentence_transformers import util
 
 class RAGEvaluator:
-    def __init__(self, weaviate_url, weaviate_api_key, dataset_path="assets/golden_dataset.json"):
+    def __init__(self, weaviate_url, weaviate_api_key, dataset_path="../assets/golden_dataset.json"):
         self.weaviate_api_key = weaviate_api_key
         self.dataset_path = dataset_path
         self.model = self.load_model()
@@ -84,7 +84,7 @@ class RAGEvaluator:
                     "Semantic Similarity": scores["Semantic Similarity"]
                 })
                 
-                with open("assets/evaluation_results.json", "w", encoding="utf-8") as f:
+                with open("../assets/evaluation_results.json", "w", encoding="utf-8") as f:
                     json.dump(results, f, indent=4)
                     f.flush()
                     f.close()
@@ -93,7 +93,7 @@ class RAGEvaluator:
         
         except KeyboardInterrupt:
             print("\nCtrl + C detected! Saving progress before exiting...")
-            with open("assets/evaluation_results.json", "w", encoding="utf-8") as f:
+            with open("../assets/evaluation_results.json", "w", encoding="utf-8") as f:
                 json.dump(results, f, indent=4)
             print("Final progress saved to evaluation_results.json. Exiting safely.")
 
