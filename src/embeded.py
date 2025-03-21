@@ -4,16 +4,25 @@ from langchain.text_splitter import RecursiveCharacterTextSplitter
 from weaviate.classes.init import Auth
 from sentence_transformers import SentenceTransformer
 from dotenv import load_dotenv
+
 load_dotenv()
 
+class EmbeddingModel:
+    def __init__(self, model_name="nomic-ai/nomic-embed-text-v1"):
+        self.model_name = model_name
+        self.model = SentenceTransformer(model_name, trust_remote_code=True)
+    
+    def encode(self, text):
+        return self.model.encode(text)
+
 class WeaviateTextEmbedder:
-    def __init__(self, folder_path, weaviate_url, weaviate_api_key):
+    def __init__(self, folder_path, weaviate_url, weaviate_api_key, model_name="nomic-ai/nomic-embed-text-v1"):
         self.folder_path = folder_path
         self.client = weaviate.connect_to_weaviate_cloud(
             cluster_url=weaviate_url,
             auth_credentials=Auth.api_key(weaviate_api_key),
         )
-        self.model = SentenceTransformer("nomic-ai/nomic-embed-text-v1", trust_remote_code=True)
+        self.model_handler = EmbeddingModel(model_name)
 
     def load_text_files(self):
         text_data = []
@@ -37,14 +46,13 @@ class WeaviateTextEmbedder:
             self.client.collections.create(
                 name="TextChunks",
                 vectorizer_config={"text2vec-transformers": {"vectorizeClassName": False}}
-
             )
 
     def insert_data(self, text_chunks):
         collection = self.client.collections.get("TextChunks")
         with collection.batch.dynamic() as batch:
             for chunk in text_chunks:
-                vector = self.model.encode(chunk)
+                vector = self.model_handler.encode(chunk)
                 batch.add_object(
                     properties={"text": chunk},
                     vector=vector
@@ -62,5 +70,7 @@ if __name__ == "__main__":
     folder_path = "unicorn_startups_text"  # Folder containing text files
     WEAVIATE_URL = os.getenv("WEAVIATE_URL")
     WEAVIATE_API_KEY = os.getenv("WEAVIATE_API_KEY")
-    embedder = WeaviateTextEmbedder(folder_path, WEAVIATE_URL, WEAVIATE_API_KEY)
+    MODEL_NAME = "nomic-ai/nomic-embed-text-v1"  # Change this to switch models
+    
+    embedder = WeaviateTextEmbedder(folder_path, WEAVIATE_URL, WEAVIATE_API_KEY, MODEL_NAME)
     embedder.run()
