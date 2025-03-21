@@ -3,6 +3,8 @@ import weaviate
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from weaviate.classes.init import Auth
 from sentence_transformers import SentenceTransformer
+from dotenv import load_dotenv
+load_dotenv()
 
 class WeaviateTextEmbedder:
     def __init__(self, folder_path, weaviate_url, weaviate_api_key):
@@ -34,7 +36,8 @@ class WeaviateTextEmbedder:
         if "TextChunks" not in existing_collections:
             self.client.collections.create(
                 name="TextChunks",
-                vectorizer_config=weaviate.Vectorizer.NONE
+                vectorizer_config={"text2vec-transformers": {"vectorizeClassName": False}}
+
             )
 
     def insert_data(self, text_chunks):
@@ -57,9 +60,7 @@ class WeaviateTextEmbedder:
 
 if __name__ == "__main__":
     folder_path = "unicorn_startups_text"  # Folder containing text files
-    WEAVIATE_URL="https://s2umskuhqz23dftu3da19g.c0.asia-southeast1.gcp.weaviate.cloud"
-    WEAVIATE_API_KEY="uT1gw7iS9ncKF14lDqDmByDXeWLXwa1rI76p"
-
-    
+    WEAVIATE_URL = os.getenv("WEAVIATE_URL")
+    WEAVIATE_API_KEY = os.getenv("WEAVIATE_API_KEY")
     embedder = WeaviateTextEmbedder(folder_path, WEAVIATE_URL, WEAVIATE_API_KEY)
     embedder.run()

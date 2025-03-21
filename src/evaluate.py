@@ -6,6 +6,11 @@ import weaviate
 import ollama
 from weaviate.classes.init import Auth
 from sentence_transformers import util
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
 
 class RAGEvaluator:
     def __init__(self, weaviate_url, weaviate_api_key, dataset_path="../assets/golden_dataset.json"):
@@ -33,7 +38,7 @@ class RAGEvaluator:
         return util.pytorch_cos_sim(embedding1, embedding2).item()
     
     def evaluate_response(self, true_answer, chatbot_response):
-        smooth = SmoothingFunction().method1  
+        smooth = SmoothingFunction().method1
         bleu = sentence_bleu([true_answer.split()], chatbot_response.split(), smoothing_function=smooth)
         
         rouge = rouge_scorer.RougeScorer(["rouge1", "rougeL"], use_stemmer=True)
@@ -100,7 +105,7 @@ class RAGEvaluator:
 
 # Example usage:
 if __name__ == "__main__":
-    WEAVIATE_URL="https://s2umskuhqz23dftu3da19g.c0.asia-southeast1.gcp.weaviate.cloud"
-    WEAVIATE_API_KEY="uT1gw7iS9ncKF14lDqDmByDXeWLXwa1rI76p"
+    WEAVIATE_URL = os.getenv("WEAVIATE_URL")
+    WEAVIATE_API_KEY = os.getenv("WEAVIATE_API_KEY")
     evaluator = RAGEvaluator(WEAVIATE_URL,WEAVIATE_API_KEY)
     evaluator.run_evaluation()
