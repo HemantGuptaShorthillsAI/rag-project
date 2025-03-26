@@ -59,7 +59,7 @@ Project Components
      - streamlit 
      - weaviate 
      - sentence-transformers 
-     - ollama (for Llama 3) 
+     - ollama (for Llama 3) & Gemini
   - **Workflow:**
      - User Input: Receives a question from the Streamlit UI. 
      - Query Weaviate: Retrieves relevant text chunks using vector similarity search. 
@@ -83,21 +83,26 @@ Project Components
      - nltk (BLEU Score) 
      - rouge-score (ROUGE Score) 
      - sentence-transformers (Semantic Similarity) 
+     - BERT_F1
+     - F1 Score
+     - METEOR
+     - NLI SCORE
      - weaviate 
      - ollama 
   - **Workflow:**
      - Load Golden Dataset: JSON file containing expected Q&A pairs. 
      - Retrieve Relevant Context: Uses Weaviate to fetch related text chunks. 
-     - Generate Chatbot Response: Queries Llama 3 to answer based on retrieved context.   
+     - Generate Chatbot Response: Queries Llama 3 or Gemini to answer based on retrieved context.   
      - Evaluate Metrics: 
         - BLEU Score: Measures word overlap between generated and expected answers. 
         - ROUGE Score: Compares text similarity based on recall and precision. 
         - Semantic Similarity: Computes cosine similarity between embeddings.   
         - Store Evaluation Results: Saves scores for later analysis. 
   - **Key Functions:**
-     - evaluate_response(true_answer, chatbot_response, model): Computes BLEU, ROUGE, and Semantic Similarity. 
+     - evaluate_response(true_answer, chatbot_response, model): Computes BLEU, ROUGE, Semantic Similarity, BERT, F1, NLI, METEOR. 
      - compute_semantic_similarity(model, expected, generated): Measures similarity between expected and generated responses. 
      - compute_embedding(model, text): Encodes text into an embedding. 
+     - compute_nli(self, premise, hypothesis): Measures confidence score i.e Entailment, Neutral, Contradiction between expected and generated answers
 
 
 **Conclusion**
