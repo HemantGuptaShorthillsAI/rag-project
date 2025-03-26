@@ -15,6 +15,7 @@ load_dotenv()
 
 LOG_FILE = "../assets/chat_log.json"
 CSV_FILE = "../assets/chat_log.csv"
+MAX_VISIBLE_HISTORY = 5  # Limit number of history items displayed initially
 
 class ChatModel:
     def __init__(self, model_name="llama3.2:3b"):
@@ -40,20 +41,18 @@ class RAGChatbot:
             cluster_url=weaviate_url,
             auth_credentials=Auth.api_key(weaviate_api_key),
         )
-        self.chat_model = ChatModel(model_name)  # Use the ChatModel class
-        self.embed_model = EmbeddingModel(embed_model_name)  # Use the EmbeddingModel class
+        self.chat_model = ChatModel(model_name)
+        self.embed_model = EmbeddingModel(embed_model_name)
         
         if "chat_history" not in st.session_state:
             st.session_state.chat_history = []
+            st.session_state.show_full_history = False  # Track show more state
             self.load_chat_history()
 
     def load_chat_history(self):
         try:
             with open(LOG_FILE, "r") as f:
                 st.session_state.chat_history = json.load(f)
-            for chat in st.session_state.chat_history:
-                if "date" not in chat:
-                    chat["date"] = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         except (FileNotFoundError, json.JSONDecodeError):
             st.session_state.chat_history = []
 
@@ -80,21 +79,29 @@ class RAGChatbot:
         model_name = st.sidebar.selectbox("Choose a chat model", ["llama3.2:3b", "gpt-4", "gemini-pro"])
         embed_model_name = st.sidebar.selectbox("Choose an embedding model", ["nomic-ai/nomic-embed-text-v1", "all-MiniLM-L6-v2"])
         
-        self.chat_model = ChatModel(model_name)  # Update chat model dynamically
-        self.embed_model = EmbeddingModel(embed_model_name)  # Update embedding model dynamically
+        self.chat_model = ChatModel(model_name)
+        self.embed_model = EmbeddingModel(embed_model_name)
         
-        for i, chat in enumerate(reversed(st.session_state.chat_history)):
-            st.sidebar.write(f"{len(st.session_state.chat_history) - i}. {chat['user']}")
-
+        
+        # Display limited chat history with show more option
+        visible_chats = st.session_state.chat_history if st.session_state.show_full_history else st.session_state.chat_history[:MAX_VISIBLE_HISTORY]
+        for i, chat in enumerate(visible_chats):
+            st.sidebar.write(f"{i + 1}. {chat['user']}")
+        
+        if len(st.session_state.chat_history) > MAX_VISIBLE_HISTORY and not st.session_state.show_full_history:
+            if st.sidebar.button("Show More"):
+                st.session_state.show_full_history = True
+                st.rerun()
+        
         st.title("StartuPedia")
         user_input = st.text_input("Ask a question:")
-
+        
         if user_input:
             retrieved_docs = self.search_documents(user_input)
             context = "\n".join(retrieved_docs)
             response = self.chat_model.generate_response(user_input, context)
             new_chat = {
-                "date": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+                "date": datetime.now().strftime("%Y-%m-%d"),
                 "user": user_input,
                 "bot": response,
             }
@@ -102,12 +109,12 @@ class RAGChatbot:
             self.save_chat_history()
 
         st.subheader("Conversation")
+        current_date = datetime.now().strftime("%Y-%m-%d")
         for chat in st.session_state.chat_history:
-            date = chat.get("date", datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
-            st.markdown(f"**User:** {chat['user']}")
-            st.markdown(f"**Bot:** {chat['bot']}")
-            st.markdown(f"*Date:* {date}")
-            st.write("---")
+            if chat.get("date") == current_date:
+                st.markdown(f"**User:** {chat['user']}")
+                st.markdown(f"**Bot:** {chat['bot']}")
+                st.write("---")
 
 if __name__ == "__main__":
     huggingface_token = os.getenv("huggingface_token")

@@ -5,7 +5,7 @@
     },
     {
     "question": "When was ByteDance founded?",
-    "answer": "ByteDance was founded on March 13, 2012."
+    "answer": "ByteDance was founded in 2012."
     },
     {
     "question": "Who are the founders of ByteDance?",
@@ -16,8 +16,8 @@
     "answer": "Key products include TikTok, Douyin, Toutiao, CapCut, BuzzVideo, and Lark."
     },
     {
-    "question": "What was ByteDance's revenue in 2023?",
-    "answer": "ByteDance's revenue in 2023 was US$120 billion."
+    "question": "What was ByteDance's revenue in 2022?",
+    "answer": "ByteDance's revenue in 2022 was US$80 billion."
     },
     {
     "question": "How many employees did ByteDance have in 2023?",
@@ -41,7 +41,7 @@
     },
     {
     "question": "What significant acquisition did ByteDance make in 2017?",
-    "answer": "In 2017, ByteDance acquired musical.ly for an estimated US$1 billion."
+    "answer": "In 2017,November , ByteDance acquired musical.ly for an estimated US$1 billion."
     },
     {
     "question": "What is the purpose of the ByteDance AI Lab?",
@@ -49,7 +49,7 @@
     },
     {
     "question": "What is the name of the image-sharing and social networking service launched by ByteDance in June 2024?",
-    "answer": "The service is called Whee."
+    "answer": "The service is called Wheezo."
     },
     {
     "question": "What is the estimated valuation of ByteDance as of November 2024?",
@@ -66,10 +66,6 @@
     {
     "question": "What type of company is ByteDance classified as?",
     "answer": "ByteDance is classified as a private company."
-    },
-    {
-    "question": "Who took over as CEO of ByteDance in 2021?",
-    "answer": "Liang Rubo took over as CEO of ByteDance in 2021."
     },
     {
     "question": "What is the main focus of ByteDance's products?",
@@ -110,11 +106,11 @@
     },
     {
     "question": "What was SpaceX's net income in 2022?",
-    "answer": "US$−559 million."
+    "answer": "Don't know"
     },
     {
     "question": "How many employees did SpaceX have as of September 2023?",
-    "answer": "Over 13,000."
+    "answer": "More than 13,000."
     },
     {
     "question": "What is the trade name of SpaceX?",
@@ -126,7 +122,7 @@
     },
     {
     "question": "What is the name of the SpaceX subsidiary that focuses on satellite internet?",
-    "generated_answer": "The answer is Starlink." 
+    "answer": "The answer is Starlink." 
     },
     {
     "question": "What is the primary goal of the Starlink project?",
@@ -149,32 +145,20 @@
     "answer": "SpaceX Starbase."
     },
     {
-    "question": "What is the name of the first operational satellite of the Starlink constellation?",
-    "answer": "Starlink 1."
-    },
-    {
     "question": "What is the name of the SpaceX rocket that can carry the most payload to orbit?",
-    "answer": "Falcon Heavy."
+    "answer": "Starship."
     },
     {
     "question": "What is the name of the SpaceX program that aims to develop a reusable rocket system?",
-    "answer": "Raptor engine program."
+    "answer": "Starship"
     },
     {
     "question": "What is the name of the first successful reflight of a Falcon 9 first stage?",
     "answer": "SES-10."
     },
     {
-    "question": "What is the name of the SpaceX mission that marked the first private spacewalk?",
-    "answer": "Polaris Dawn."
-    },
-    {
     "question": "What is the name of the SpaceX rocket that launched the Tesla Roadster into space?",
     "answer": "Falcon Heavy."
-    },
-    {
-    "question": "What is the name of the SpaceX program that focuses on developing a new generation of rocket engines?",
-    "answer": "Raptor."
     },
     {
     "question": "What is the name of the SpaceX spacecraft designed for crewed missions?",
@@ -190,7 +174,7 @@
     },
     {
     "question": "What is the name of the SpaceX rocket that has the capability to launch satellites into geostationary orbit?",
-    "answer": "Falcon 9."
+    "answer": "Don't know"
     },
     {
     "question": "What is the name of the SpaceX project that aims to colonize Mars?",
@@ -222,7 +206,7 @@
     },
     {
     "question": "What was Stripe's revenue in 2022?",
-    "answer": "US$14.4 billion."
+    "answer": "Don't know"
     },
     {
     "question": "How many employees does Stripe have as of 2025?",
@@ -337,10 +321,6 @@
     "answer": "Cryptocurrency."
     },
     {
-    "question": "What was Binance's revenue in 2022?",
-    "answer": "US$ 12 billion."
-    },
-    {
     "question": "How many employees does Binance have as of 2023?",
     "answer": "7,000."
     },
@@ -374,11 +354,7 @@
     },
     {
     "question": "What is Binance's token called?",
-    "answer": "BNB (originally Binance Coin)."
-    },
-    {
-    "question": "What is the purpose of Binance's Radar service?",
-    "answer": "To block fraudulent transactions."
+    "answer": "BNB."
     },
     {
     "question": "What was the result of Binance's legal issues in November 2023?",
@@ -399,30 +375,6 @@
     {
     "question": "What is the significance of the Binance Smart Chain?",
     "answer": "It is a blockchain platform for running smart contracts and decentralized applications."
-    },
-    {
-    "question": "What was the purpose of the partnership between Binance and Ford in January 2022?",
-    "answer": "To handle transactions for consumer vehicle orders and reservations."
-    },
-    {
-    "question": "What is the Binance Academy?",
-    "answer": "A platform providing educational resources about blockchain and cryptocurrency."
-    },
-    {
-    "question": "What is the Binance Launchpad?",
-    "answer": "A platform for launching new cryptocurrency projects through Initial Exchange Offerings (IEOs)."
-    },
-    {
-    "question": "What is the Binance NFT marketplace?",
-    "answer": "A platform for trading non-fungible tokens (NFTs)."
-    },
-    {
-    "question": "What is the main function of Binance's payment processing service?",
-    "answer": "To facilitate cryptocurrency transactions for businesses."
-    },
-    {
-    "question": "What was the outcome of Binance's acquisition of Paystack?",
-    "answer": "It aimed to expand Binance's services into Africa."
     },
     {
     "question": "What is the Binance Smart Chain's BEP-20 token standard?",
@@ -451,10 +403,6 @@
     {
     "question": "What was Shein's revenue in 2023?",
     "answer": "US$32 billion."
-    },
-    {
-    "question": "How many employees does Shein have as of 2024?",
-    "answer": "16,000+."
     },
     {
     "question": "What type of products does Shein primarily sell?",
@@ -487,10 +435,6 @@
     "answer": "Shein moved its headquarters from China to Singapore."
     },
     {
-    "question": "What is the name of Shein's charity initiative?",
-    "answer": "Binance Charity Foundation."
-    },
-    {
     "question": "What was the revenue generated by Shein in 2022?",
     "answer": "US$24 billion."
     },
@@ -511,10 +455,6 @@
     "answer": "MOTFROMWE."
     },
     {
-    "question": "What was the outcome of Shein's funding round in March 2023?",
-    "answer": "Stripe completed its Series I fundraise of more than $6.5 billion."
-    },
-    {
     "question": "What is the primary focus of Shein's product offerings?",
     "answer": "Affordable and trendy fashion items."
     },
@@ -527,18 +467,6 @@
     "answer": "Between 2,000 and 10,000."
     },
     {
-    "question": "What is the name of the program launched by Shein to support startups?",
-    "answer": "Stripe Atlas."
-    },
-    {
-    "question": "What is the main goal of Shein's Atlas platform?",
-    "answer": "To help startups register as US corporations."
-    },
-    {
-    "question": "What was the outcome of Shein's partnership with Ford in January 2022?",
-    "answer": "Stripe will handle transactions for consumer vehicle orders and reservations."
-    },
-    {
     "question": "What is Databricks?",
     "answer": "Databricks is a data and AI company founded by the creators of Apache Spark. It provides a unified analytics platform for data engineering, data science, machine learning, and data warehousing."
     },
@@ -549,10 +477,6 @@
     {
     "question": "What is Apache Spark?",
     "answer": "Apache Spark is a unified analytics engine for large-scale data processing, enabling distributed computing and in-memory data processing."
-    },
-    {
-    "question": "What are the core components of the Databricks Lakehouse Platform?",
-    "answer": "The core components include Delta Lake, MLflow, and Apache Spark, integrated into a unified platform."
     },
     {
     "question": "What is Delta Lake?",
@@ -572,43 +496,15 @@
     },
     {
     "question": "What are Databricks Workspaces?",
-    "answer": "Databricks Workspaces provide a collaborative environment for data teams to work together on data engineering, data science, and machine learning projects."
+    "answer": "Don't know"
     },
     {
     "question": "What is Databricks SQL?",
     "answer": "Databricks SQL is a data warehousing capability that allows users to run SQL queries directly on data lakes, offering fast query performance."
     },
     {
-    "question": "What are Databricks Notebooks?",
-    "answer": "Databricks Notebooks are collaborative, interactive environments that support multiple programming languages like Python, Scala, SQL, and R, used for data exploration and development."
-    },
-    {
-    "question": "What is Databricks Runtime?",
-    "answer": "Databricks Runtime is a performance-optimized version of Apache Spark, designed to improve the speed and efficiency of data processing workloads."
-    },
-    {
-    "question": "What is Databricks Auto Loader?",
-    "answer": "Databricks Auto Loader incrementally and efficiently processes new data files as they arrive in cloud storage, simplifying ETL pipelines."
-    },
-    {
-    "question": "What is the purpose of Databricks Jobs?",
-    "answer": "Databricks Jobs allow users to schedule and manage automated data pipelines and workflows."
-    },
-    {
-    "question": "What is Databricks Partner Connect?",
-    "answer": "Databricks Partner Connect simplifies the integration of third-party tools and services with the Databricks platform."
-    },
-    {
-    "question": "What is the significance of Photon in Databricks?",
-    "answer": "Photon is a vectorized query engine developed by Databricks, providing significantly faster SQL query performance on data lakes."
-    },
-    {
     "question": "How does Databricks handle data governance?",
     "answer": "Databricks integrates with Unity Catalog to provide centralized data governance, security, and auditing across data and AI assets."
-    },
-    {
-    "question": "What is Databricks Repos?",
-    "answer": "Databricks Repos provides Git integration directly within the Databricks workspace, enabling version control and collaboration for code and notebooks."
     },
     {
     "question": "What is the role of Databricks in Machine Learning Operations (MLOps)?",
@@ -647,16 +543,8 @@
     "answer": "Grok is xAI's first AI model."
     },
     {
-    "question": "What is a key feature of Grok that differentiates it?",
-    "answer": "Grok is designed to have a bit of wit and a rebellious streak, and it has access to real-time information via the X platform."
-    },
-    {
     "question": "What kind of data does Grok have access to?",
     "answer": "Grok has access to real-time data via the X platform."
-    },
-    {
-    "question": "What is the purpose of accessing real-time data for Grok?",
-    "answer": "Accessing real-time data allows Grok to provide up-to-date and dynamic responses to user queries."
     },
     {
     "question": "What is the intended tone or personality of Grok?",
@@ -668,7 +556,7 @@
     },
     {
     "question": "Does xAI plan to open-source its AI models?",
-    "answer": "As of right now, there is no definitive information if they are planning to open-source their models."
+    "answer": "xAI released Grok-1 as open source on 2024, march"
     },
     {
     "question": "How does xAI plan to leverage Elon Musk's other companies?",
@@ -685,10 +573,6 @@
     {
     "question": "What is the team composition of xAI?",
     "answer": "The team consists of experienced researchers and engineers from leading AI companies and universities."
-    },
-    {
-    "question": "What are some of the AI models that xAI's team members have previously worked on?",
-    "answer": "Team members have previously worked on models from DeepMind, OpenAI, Google Research, Microsoft Research, and Tesla."
     },
     {
     "question": "How is xAI different from other AI companies?",
@@ -758,10 +642,6 @@
     {
     "question": "What is the significance of the partnership between Anthropic and Palantir announced in November 2024?",
     "answer": "It allows U.S. intelligence and defense agencies access to Claude models."
-    },
-    {
-    "question": "What was the outcome of Anthropic's funding round in March 2023?",
-    "answer": "They raised more than $6.5 billion at a $50 billion valuation."
     },
     {
     "question": "What is the primary focus of Anthropic's research?",
@@ -862,10 +742,6 @@
     {
     "question": "How has Epic Games influenced the development of cross-platform play?",
     "answer": "Epic Games has been a proponent of cross-platform play, enabling players to play together across different platforms."
-    },
-    {
-    "question": "What is the role of the Epic Games Launcher?",
-    "answer": "The Epic Games Launcher is a desktop application that allows users to download and play games from the Epic Games Store."
     },
     {
     "question": "What are some of the popular games developed using the Unreal Engine?",
@@ -1013,10 +889,6 @@
     "answer": "Fanatics partners with numerous college sports programs to provide licensed merchandise."
     },
     {
-    "question": "How does Fanatics handle customer service?",
-    "answer": "Fanatics provides customer service through various channels, including online support and phone assistance."
-    },
-    {
     "question": "What is Fanatics' approach to technology?",
     "answer": "Fanatics utilizes technology to improve its supply chain, e-commerce platform, and customer experience."
     },
@@ -1109,10 +981,6 @@
     "answer": "Chime offers automatic savings features, such as rounding up debit card purchases."
     },
     {
-    "question": "How does Chime verify user identity?",
-    "answer": "Chime uses various methods, including identity verification services, to verify user identity."
-    },
-    {
     "question": "What is Canva?",
     "answer": "Canva is a graphic design platform that allows users to create visual content."
     },
@@ -1129,16 +997,8 @@
     "answer": "Canva Pro is a paid subscription that offers additional features, such as access to more templates and advanced design tools."
     },
     {
-    "question": "What is Canva for Teams?",
-    "answer": "Canva for Teams is a plan that allows teams to collaborate on designs and manage their brand assets."
-    },
-    {
     "question": "What is Canva's focus on user accessibility?",
     "answer": "Canva focuses on making design accessible to users with varying levels of design experience."
-    },
-    {
-    "question": "What is Canva's library of templates and images?",
-    "answer": "Canva provides a vast library of templates, images, and other design elements."
     },
     {
     "question": "What is Canva's drag-and-drop interface?",
@@ -1221,10 +1081,6 @@
     "answer": "Revolut offers competitive exchange rates and allows users to hold and exchange multiple currencies."
     },
     {
-    "question": "What are Revolut's budgeting tools?",
-    "answer": "Revolut provides tools for tracking spending, setting budgets, and analyzing financial activity."
-    },
-    {
     "question": "Does Revolut offer stock trading?",
     "answer": "Yes, Revolut offers commission-free stock trading for various companies."
     },
@@ -1237,20 +1093,12 @@
     "answer": "Revolut uses various security measures, including encryption and fraud detection, to protect user accounts and data."
     },
     {
-    "question": "What is Revolut Junior?",
-    "answer": "Revolut Junior is a service designed for young people, offering a debit card and app for managing finances."
-    },
-    {
     "question": "What is Revolut Business?",
     "answer": "Revolut Business is a platform for businesses, offering features such as multi-currency accounts and expense management."
     },
     {
     "question": "How does Revolut provide travel insurance?",
     "answer": "Revolut offers travel insurance as part of its paid subscriptions, covering various travel-related incidents."
-    },
-    {
-    "question": "What is Revolut's customer support?",
-    "answer": "Revolut provides customer support through in-app chat and other channels."
     },
     {
     "question": "What are the benefits of using Revolut?",
@@ -1277,10 +1125,6 @@
     "answer": "Key features include virtual whiteboards, sticky notes, mind maps, and real-time collaboration tools."
     },
     {
-    "question": "Does Miro offer templates?",
-    "answer": "Yes, Miro offers a wide range of templates for various collaboration needs."
-    },
-    {
     "question": "How does Miro facilitate real-time collaboration?",
     "answer": "Miro allows multiple users to collaborate on the same whiteboard simultaneously, with features like cursors and commenting."
     },
@@ -1294,11 +1138,7 @@
     },
     {
     "question": "What is Miro's approach to user experience?",
-    "answer": "Miro focuses on providing a user-friendly and intuitive interface for visual collaboration."
-    },
-    {
-    "question": "What are Miro's security features?",
-    "answer": "Miro provides security features such as encryption and access controls to protect user data."
+    "answer": "Don't know"
     },
     {
     "question": "What is Miro's educational offering?",
@@ -1329,14 +1169,6 @@
     "answer": "Miro provides tools for strategic planning, such as SWOT analysis and strategy mapping."
     },
     {
-    "question": "What is Miro's scalability?",
-    "answer": "Miro is designed to scale with teams and organizations of various sizes."
-    },
-    {
-    "question": "How does Miro support workshops and meetings?",
-    "answer": "Miro provides tools for facilitating workshops and meetings, such as timers and voting features."
-    },
-    {
     "question": "What is Miro's approach to innovation?",
     "answer": "Miro aims to foster innovation through its collaborative whiteboard platform."
     },
@@ -1359,10 +1191,6 @@
     {
     "question": "Where is Nature's Fynd headquartered?",
     "answer": "Nature's Fynd is headquartered in Chicago, Illinois."
-    },
-    {
-    "question": "What is the environmental impact of Fy production?",
-    "answer": "Fy production has a low environmental impact compared to traditional meat and dairy production."
     },
     {
     "question": "How does Nature's Fynd grow Fy?",
@@ -1401,10 +1229,6 @@
     "answer": "Nature's Fynd uses various marketing strategies, including online and retail channels."
     },
     {
-    "question": "What is Nature's Fynd's approach to consumer education?",
-    "answer": "Nature's Fynd aims to educate consumers about the benefits of Fy and its products."
-    },
-    {
     "question": "What is Nature's Fynd's role in the plant-based food industry?",
     "answer": "Nature's Fynd is a key player in the plant-based food industry, offering unique and sustainable protein alternatives."
     },
@@ -1419,10 +1243,6 @@
     {
     "question": "What is Trendyol?",
     "answer": "Trendyol is a leading e-commerce platform in Turkey."
-    },
-    {
-    "question": "What types of products does Trendyol sell?",
-    "answer": "Trendyol sells fashion, electronics, home goods, and other consumer products."
     },
     {
     "question": "Where is Trendyol based?",
@@ -1533,10 +1353,6 @@
     "answer": "GoPuff uses its own network of drivers and micro-fulfillment centers to manage delivery logistics."
     },
     {
-    "question": "What is GoPuff's approach to customer service?",
-    "answer": "GoPuff provides customer service through its mobile app and online support channels."
-    },
-    {
     "question": "What is GoPuff's focus on expansion?",
     "answer": "GoPuff focuses on expanding its service to new cities and increasing its product offerings."
     },
@@ -1607,10 +1423,6 @@
     {
     "question": "What is Scale AI's role in the autonomous vehicle industry?",
     "answer": "Scale AI provides critical data labeling services for autonomous vehicle developers, enabling them to train their perception systems."
-    },
-    {
-    "question": "What is Scale AI's focus on innovation?",
-    "answer": "Scale AI focuses on developing advanced data labeling tools and techniques to improve the efficiency and accuracy of AI training."
     },
     {
     "question": "What is Xiaohongshu?",
@@ -1805,14 +1617,6 @@
     "answer": "Bitmain has also developed AI chips, aiming to diversify its business beyond cryptocurrency mining."
     },
     {
-    "question": "What are the controversies surrounding Bitmain?",
-    "answer": "Controversies include concerns about centralization of mining power, hardware reliability issues, and internal management disputes."
-    },
-    {
-    "question": "What is Bitmain's approach to technological innovation?",
-    "answer": "Bitmain focuses on developing cutting-edge ASIC chips to improve mining efficiency and performance."
-    },
-    {
     "question": "What is Bitmain's impact on the Bitcoin network?",
     "answer": "Bitmain has a significant impact on the Bitcoin network due to its control over a large portion of the mining hardware."
     },
@@ -1881,10 +1685,6 @@
     "answer": "SenseTime invests heavily in AI research and development, focusing on deep learning and computer vision."
     },
     {
-    "question": "What are SenseTime's applications in the mobile internet sector?",
-    "answer": "SenseTime provides AI-powered features for mobile devices, such as camera enhancements and augmented reality applications."
-    },
-    {
     "question": "What is SenseTime's global presence?",
     "answer": "SenseTime has a global presence with offices and partnerships in various countries, though its primary market is in China."
     },
@@ -1913,10 +1713,6 @@
     "answer": "Getir has rapidly expanded to multiple countries, focusing on urban areas with high population density."
     },
     {
-    "question": "What is Getir's approach to customer service?",
-    "answer": "Getir focuses on providing a seamless and convenient shopping experience through its mobile app and delivery service."
-    },
-    {
     "question": "What is Getir's impact on the grocery delivery market?",
     "answer": "Getir has disrupted the grocery delivery market by introducing ultra-fast delivery, setting a new standard for speed and convenience."
     },
@@ -1927,10 +1723,6 @@
     {
     "question": "What is Northvolt?",
     "answer": "Northvolt is a Swedish battery manufacturer focused on producing sustainable lithium-ion batteries for electric vehicles and energy storage systems."
-    },
-    {
-    "question": "What is Northvolt's primary goal?",
-    "answer": "Northvolt's primary goal is to establish a sustainable and environmentally friendly battery manufacturing industry in Europe."
     },
     {
     "question": "What types of batteries does Northvolt produce?",
@@ -1961,10 +1753,6 @@
     "answer": "Northvolt has partnerships with major automotive manufacturers and energy companies to develop and supply batteries."
     },
     {
-    "question": "What is Northvolt's vision for the future?",
-    "answer": "Northvolt envisions a future where sustainable and high-performance batteries power a cleaner and more environmentally friendly society."
-    },
-    {
     "question": "What is Airtable?",
     "answer": "Airtable is a cloud-based collaboration service that combines features of a database and a spreadsheet."
     },
@@ -1981,16 +1769,8 @@
     "answer": "Airtable offers relational database capabilities, allowing users to link tables and create structured data relationships."
     },
     {
-    "question": "What are Airtable's automation features?",
-    "answer": "Airtable automations allow users to create workflows that automatically trigger actions based on predefined rules."
-    },
-    {
     "question": "What are Airtable's integration capabilities?",
     "answer": "Airtable integrates with various tools and services, including Slack, Google Drive, and Salesforce."
-    },
-    {
-    "question": "What is Airtable's focus on user accessibility?",
-    "answer": "Airtable focuses on providing a user-friendly interface that makes database management accessible to non-technical users."
     },
     {
     "question": "What are Airtable's view types?",
@@ -2015,10 +1795,6 @@
     {
     "question": "What is Checkout.com's approach to fraud management?",
     "answer": "Checkout.com provides advanced fraud detection tools and risk management solutions to protect businesses from fraudulent transactions."
-    },
-    {
-    "question": "What is Checkout.com's focus on scalability?",
-    "answer": "Checkout.com focuses on providing a scalable payment platform that can handle high transaction volumes and complex payment flows."
     },
     {
     "question": "What is Checkout.com's integration capabilities?",
@@ -2073,20 +1849,8 @@
     "answer": "Key features include one-click checkout, fraud detection, and integration with various e-commerce platforms."
     },
     {
-    "question": "How does Bolt Financial improve checkout conversion rates?",
-    "answer": "Bolt Financial simplifies the checkout process, reducing friction and increasing the likelihood of completed purchases."
-    },
-    {
     "question": "What is Bolt Financial's approach to fraud protection?",
     "answer": "Bolt Financial uses advanced algorithms and data analysis to detect and prevent fraudulent transactions."
-    },
-    {
-    "question": "What is Bolt Financial's focus on shopper identity?",
-    "answer": "Bolt Financial aims to create a network of verified shoppers, reducing the need for repeated logins and improving the shopping experience."
-    },
-    {
-    "question": "What is Bolt Financial's integration capabilities?",
-    "answer": "Bolt Financial integrates with various e-commerce platforms, including Shopify, Magento, and BigCommerce."
     },
     {
     "question": "What is Bolt Financial's role in the e-commerce industry?",
@@ -2111,10 +1875,6 @@
     {
     "question": "What blockchain networks does Alchemy support?",
     "answer": "Alchemy supports major blockchain networks, including Ethereum, Polygon, and others."
-    },
-    {
-    "question": "What is Alchemy's focus on reliability?",
-    "answer": "Alchemy focuses on providing highly reliable infrastructure to ensure dApps have consistent and uninterrupted access to blockchain networks."
     },
     {
     "question": "What is Alchemy's role in the Web3 ecosystem?",
@@ -2222,7 +1982,7 @@
     },
     {
     "question": "What is DCG's vision for the future of finance?",
-    "answer": "DCG envisions a future where digital assets and blockchain technology play a significant role in the global financial system."
+    "answer": "Don't know"
     },
     {
     "question": "What is Figma?",
@@ -2345,12 +2105,8 @@
     "answer": "Controversies include legal disputes with regulatory bodies, such as the SEC, regarding the classification of XRP."
     },
     {
-    "question": "What is Ripple's focus on interoperability?",
-    "answer": "Ripple focuses on enabling interoperability between different payment systems and networks."
-    },
-    {
     "question": "What is Ripple's vision for the future of payments?",
-    "answer": "Ripple envisions a future where cross-border payments are seamless and efficient, powered by blockchain technology."
+    "answer": "Don't know"
     },
     {
     "question": "What is Oyo Rooms?",
@@ -2401,10 +2157,6 @@
     "answer": "Klaviyo uses customer data to create targeted segments and deliver personalized messages based on customer behavior."
     },
     {
-    "question": "What is Klaviyo's approach to data analysis?",
-    "answer": "Klaviyo provides tools for analyzing customer data and tracking marketing performance."
-    },
-    {
     "question": "What is Klaviyo's integration capabilities?",
     "answer": "Klaviyo integrates with various e-commerce platforms, including Shopify, Magento, and BigCommerce."
     },
@@ -2439,10 +2191,6 @@
     {
     "question": "What is OutSystems' focus on enterprise-grade development?",
     "answer": "OutSystems focuses on providing a platform that meets the security, scalability, and performance requirements of enterprise applications."
-    },
-    {
-    "question": "What is OutSystems' integration capabilities?",
-    "answer": "OutSystems provides tools for integrating with various systems and databases, enabling seamless data exchange and process automation."
     },
     {
     "question": "What is OutSystems' role in the low-code development market?",
@@ -2529,46 +2277,6 @@
     "answer": "Hey Tea staff in Jinan had a physical conflict with a takeaway rider, reportedly due to a misunderstanding when taking the products. The incident involved staff picking up chairs and other equipment."
     },
     {
-    "question": "I am sorry, but this article does not contain enough information to fulfill your request.",
-    "answer": "This document does not contain the answer to your question."
-    },
-    {
-    "question": "I am sorry, but this article does not contain enough information to fulfill your request.",
-    "answer": "This document does not contain the answer to your question."
-    },
-    {
-    "question": "I am sorry, but this article does not contain enough information to fulfill your request.",
-    "answer": "This document does not contain the answer to your question."
-    },
-    {
-    "question": "I am sorry, but this article does not contain enough information to fulfill your request.",
-    "answer": "This document does not contain the answer to your question."
-    },
-    {
-    "question": "I am sorry, but this article does not contain enough information to fulfill your request.",
-    "answer": "This document does not contain the answer to your question."
-    },
-    {
-    "question": "I am sorry, but this article does not contain enough information to fulfill your request.",
-    "answer": "This document does not contain the answer to your question."
-    },
-    {
-    "question": "I am sorry, but this article does not contain enough information to fulfill your request.",
-    "answer": "This document does not contain the answer to your question."
-    },
-    {
-    "question": "I am sorry, but this article does not contain enough information to fulfill your request.",
-    "answer": "This document does not contain the answer to your question."
-    },
-    {
-    "question": "I am sorry, but this article does not contain enough information to fulfill your request.",
-    "answer": "This document does not contain the answer to your question."
-    },
-    {
-    "question": "I am sorry, but this article does not contain enough information to fulfill your request.",
-    "answer": "This document does not contain the answer to your question."
-    },
-    {
     "question": "What type of company is Tanium?",
     "answer": "Tanium is a privately held cybersecurity and systems management company."
     },
@@ -2615,10 +2323,6 @@
     {
     "question": "When was Kavak founded?",
     "answer": "Kavak was founded in 2016."
-    },
-    {
-    "question": "Who are the founders of Kavak?",
-    "answer": "Kavak was founded by Carlos García Ottati, Loreanne García Ottati, and Roger Laughlin."
     },
     {
     "question": "Where are Kavak's headquarters located?",
@@ -2701,10 +2405,6 @@
     "answer": "Snyk specializes in securing open source dependencies, providing comprehensive vulnerability data and remediation guidance."
     },
     {
-    "question": "What is Snyk's integration capabilities?",
-    "answer": "Snyk integrates with various development tools and platforms, including Git repositories, CI/CD pipelines, and container registries."
-    },
-    {
     "question": "What is Snyk's approach to vulnerability remediation?",
     "answer": "Snyk provides automated fixes and guidance to help developers quickly address vulnerabilities."
     },
@@ -2725,16 +2425,8 @@
     "answer": "Key features include one-click checkout, fraud detection, and integration with various e-commerce platforms."
     },
     {
-    "question": "How does Bolt improve checkout conversion rates?",
-    "answer": "Bolt simplifies the checkout process, reducing friction and increasing the likelihood of completed purchases."
-    },
-    {
     "question": "What is Bolt's approach to fraud protection?",
     "answer": "Bolt uses advanced algorithms and data analysis to detect and prevent fraudulent transactions."
-    },
-    {
-    "question": "What is Bolt's focus on shopper identity?",
-    "answer": "Bolt aims to create a network of verified shoppers, reducing the need for repeated logins and improving the shopping experience."
     },
     {
     "question": "What is Bolt's integration capabilities?",
@@ -2789,10 +2481,6 @@
     "answer": "1Password generates strong, unique passwords and securely stores them, reducing the risk of password breaches."
     },
     {
-    "question": "What is 1Password's focus on user experience?",
-    "answer": "1Password focuses on providing a user-friendly experience for managing passwords and sensitive information."
-    },
-    {
     "question": "What is 1Password's security measures?",
     "answer": "1Password uses end-to-end encryption and other security measures to protect user data."
     },
@@ -2805,10 +2493,6 @@
     "answer": "1Password is a key player in the cybersecurity industry, providing tools for secure password management and data protection."
     },
     {
-    "question": "What products does Dapper Labs develop?",
-    "answer": "Dapper Labs develops NFT platforms and games, including NBA Top Shot and CryptoKitties."
-    },
-    {
     "question": "What is NBA Top Shot?",
     "answer": "NBA Top Shot is an NFT marketplace for digital collectibles of NBA moments."
     },
@@ -2817,20 +2501,12 @@
     "answer": "CryptoKitties is a blockchain-based game that allows users to collect and breed digital cats."
     },
     {
-    "question": "What blockchain does Dapper Labs use?",
-    "answer": "Dapper Labs developed the Flow blockchain for its NFT platforms and games."
-    },
-    {
-    "question": "What are some key features of Dapper Labs' platforms?",
-    "answer": "Key features include digital collectibles, blockchain-based ownership, and interactive experiences."
-    },
-    {
     "question": "What is Dapper Labs' focus on user experience?",
     "answer": "Dapper Labs focuses on providing a user-friendly experience for mainstream consumers to engage with blockchain technology."
     },
     {
     "question": "What is Dapper Labs' role in the NFT market?",
-    "answer": "Dapper Labs is a significant player in the NFT market, pioneering the development of mainstream NFT experiences."
+    "answer": "Don't know"
     },
     {
     "question": "What is Dapper Labs' vision for the future of digital collectibles?",
@@ -2911,14 +2587,6 @@
     {
     "question": "What are some key features of TripActions' platform?",
     "answer": "Key features include online booking, expense reporting, and travel policy enforcement."
-    },
-    {
-    "question": "How does TripActions simplify corporate travel?",
-    "answer": "TripActions provides a centralized platform for booking travel and managing expenses, reducing the administrative burden for businesses."
-    },
-    {
-    "question": "What is TripActions' focus on user experience?",
-    "answer": "TripActions focuses on providing a user-friendly experience for business travelers and travel managers."
     },
     {
     "question": "What is TripActions' expense management capabilities?",
@@ -3061,10 +2729,6 @@
     "answer": "Hopin provided tools for engaging attendees, such as live chat and Q&A sessions."
     },
     {
-    "question": "What was Hopin's integration capabilities?",
-    "answer": "Hopin integrated with various tools and platforms, including marketing automation and CRM systems."
-    },
-    {
     "question": "What was Hopin's role in the virtual events industry?",
     "answer": "Hopin was a significant player in the virtual events industry, providing a platform for hosting online events."
     },
@@ -3113,16 +2777,8 @@
     "answer": "CRED offers credit card bill payments, rewards, and access to exclusive offers and experiences."
     },
     {
-    "question": "How does CRED ensure user privacy and security?",
-    "answer": "CRED uses encryption and security measures to protect user data and financial information."
-    },
-    {
     "question": "What is CRED's focus on user rewards?",
     "answer": "CRED provides rewards and exclusive offers to incentivize credit card bill payments through its platform."
-    },
-    {
-    "question": "What is CRED's expansion strategy?",
-    "answer": "CRED focuses on expanding its user base and partnerships with brands and financial institutions in India."
     },
     {
     "question": "What are the challenges faced by CRED?",
@@ -3153,10 +2809,6 @@
     "answer": "Personio integrates with various HR and accounting systems, enabling seamless data exchange and process automation."
     },
     {
-    "question": "What is Personio's expansion strategy?",
-    "answer": "Personio focuses on expanding its market presence in Europe and providing localized HR solutions."
-    },
-    {
     "question": "What is Personio's role in the HR tech industry?",
     "answer": "Personio is a leading player in the HR tech industry, providing comprehensive HR solutions for SMEs."
     },
@@ -3171,14 +2823,6 @@
     {
     "question": "What are some key features of Lianjia's platform?",
     "answer": "Key features include online property listings, virtual tours, and real estate market data."
-    },
-    {
-    "question": "How does Lianjia ensure transparency in real estate transactions?",
-    "answer": "Lianjia provides detailed property information and market data to ensure transparency for buyers and sellers."
-    },
-    {
-    "question": "What is Lianjia's focus on technology?",
-    "answer": "Lianjia uses technology to improve its services and provide a seamless experience for customers."
     },
     {
     "question": "What is Lianjia's expansion strategy?",
@@ -3231,10 +2875,6 @@
     {
     "question": "How does Wiz improve cloud security?",
     "answer": "Wiz provides visibility into cloud environments and identifies security risks and vulnerabilities."
-    },
-    {
-    "question": "What is Wiz's focus on cloud security posture management?",
-    "answer": "Wiz provides tools for assessing and improving the security posture of cloud environments."
     },
     {
     "question": "What is Wiz's integration capabilities?",
@@ -3369,20 +3009,12 @@
     "answer": "PhonePe offers mobile payments, UPI transactions, recharges, bill payments, and financial services."
     },
     {
-    "question": "How does PhonePe ensure transaction security?",
-    "answer": "PhonePe uses encryption and security measures to protect user data and financial information."
-    },
-    {
     "question": "What is PhonePe's expansion strategy?",
     "answer": "PhonePe focuses on expanding its user base and merchant network in India's digital payments market."
     },
     {
     "question": "What are the challenges faced by PhonePe?",
     "answer": "Challenges include competition from other digital payment platforms and maintaining user engagement."
-    },
-    {
-    "question": "What is PhonePe's focus on financial inclusion?",
-    "answer": "PhonePe aims to promote financial inclusion by providing digital payment solutions to underserved communities."
     },
     {
     "question": "What is PhonePe's role in the Indian digital payments market?",
@@ -3409,10 +3041,6 @@
     "answer": "Challenges include competition from established financial institutions and regulatory compliance in the fintech sector."
     },
     {
-    "question": "What is Viva Republica's focus on user experience?",
-    "answer": "Viva Republica prioritizes user experience by providing a seamless and intuitive mobile financial platform."
-    },
-    {
     "question": "What is Viva Republica's role in the South Korean fintech industry?",
     "answer": "Viva Republica is a leading player in the South Korean fintech industry, providing innovative mobile financial services."
     },
@@ -3423,10 +3051,6 @@
     {
     "question": "What technology does Pony.ai develop?",
     "answer": "Pony.ai develops autonomous driving software and hardware, including sensors and AI algorithms."
-    },
-    {
-    "question": "How does Pony.ai ensure safety in its autonomous driving technology?",
-    "answer": "Pony.ai conducts extensive testing and uses redundant safety systems to ensure the safety of its vehicles and passengers."
     },
     {
     "question": "What is Pony.ai's expansion strategy?",
@@ -3517,10 +3141,6 @@
     "answer": "Blockchain.com aims to provide a user-friendly platform for accessing and managing cryptocurrencies."
     },
     {
-    "question": "What is Blockchain.com's expansion strategy?",
-    "answer": "Blockchain.com focuses on expanding its services and user base in the global cryptocurrency market."
-    },
-    {
     "question": "What are the challenges faced by Blockchain.com?",
     "answer": "Challenges include regulatory compliance, security risks, and competition in the cryptocurrency exchange market."
     },
@@ -3539,14 +3159,6 @@
     {
     "question": "How does OneTrust help organizations comply with data privacy regulations?",
     "answer": "OneTrust provides tools for managing data privacy compliance, including assessments, consent management, and incident response."
-    },
-    {
-    "question": "What is OneTrust's focus on data governance?",
-    "answer": "OneTrust provides tools for managing data governance and compliance with data privacy regulations."
-    },
-    {
-    "question": "What is OneTrust's integration capabilities?",
-    "answer": "OneTrust integrates with various enterprise systems and applications, enabling seamless data governance and compliance management."
     },
     {
     "question": "What is OneTrust's expansion strategy?",
@@ -3571,10 +3183,6 @@
     {
     "question": "What is CloudKitchens' expansion strategy?",
     "answer": "CloudKitchens focuses on expanding its network of kitchen spaces in urban areas with high demand for food delivery."
-    },
-    {
-    "question": "What are the challenges faced by CloudKitchens?",
-    "answer": "Challenges include managing logistics, maintaining kitchen facilities, and competing in the food delivery market."
     },
     {
     "question": "What is CloudKitchens' focus on technology?",
@@ -3710,7 +3318,7 @@
     },
     {
     "question": "What is Royole's expansion strategy?",
-    "answer": "Royole focuses on expanding its manufacturing capacity and developing new applications for its flexible display technology."
+    "answer": "Don't know"
     },
     {
     "question": "What are the challenges faced by Royole?",
@@ -3731,10 +3339,6 @@
     {
     "question": "What products does UBtech Robotics develop?",
     "answer": "UBtech Robotics develops humanoid robots, educational robots, and service robots."
-    },
-    {
-    "question": "How does UBtech Robotics contribute to robotics education?",
-    "answer": "UBtech Robotics develops educational robots and programming tools to promote robotics education and STEM learning."
     },
     {
     "question": "What is UBtech Robotics' expansion strategy?",
@@ -3791,10 +3395,6 @@
     {
     "question": "How does WorldRemit simplify international money transfers?",
     "answer": "WorldRemit provides a convenient online platform for sending money internationally, eliminating the need for traditional money transfer services."
-    },
-    {
-    "question": "What is WorldRemit's focus on user accessibility?",
-    "answer": "WorldRemit aims to provide accessible and affordable money transfer services to users worldwide."
     },
     {
     "question": "What is WorldRemit's expansion strategy?",
@@ -3882,7 +3482,7 @@
     },
     {
     "question": "What is Pristyn Care's focus on patient experience?",
-    "answer": "Pristyn Care emphasizes a seamless and patient-centric experience from consultation to post-operative care."
+    "answer": "Don't know"
     },
     {
     "question": "What is NetDocuments?",
@@ -3990,7 +3590,7 @@
     },
     {
     "question": "What is Suning's strategy in the retail sector?",
-    "answer": "Suning focuses on integrating online and offline retail experiences through its 'smart retail' strategy."
+    "answer": "Don't know"
     },
     {
     "question": "What is Suning's involvement in sports?",
@@ -4265,10 +3865,6 @@
     "answer": "Key milestones include: Founding in 2019, Series A funding in 2021, Series B funding and unicorn status in 2022, Debt funding from JP Morgan and Credit Suisse in 2022, Expansion into financing of wholesalers."
     },
     {
-    "question": "How does Wayflyer's revenue-based financing model differ from traditional lending?",
-    "answer": "Wayflyer's revenue-based financing is tailored for companies with revenue streams like advertising and non-recurring revenue, likely focusing more on future revenue potential than traditional collateral-based lending."
-    },
-    {
     "question": "What role did debt funding from JP Morgan and Credit Suisse play in Wayflyer's growth?",
     "answer": "Debt funding from JP Morgan and Credit Suisse provided Wayflyer with significant capital to fund its rapid growth and expand its lending operations."
     },
@@ -4319,10 +3915,6 @@
     {
     "question": "What significant funding and investment has Workato received?",
     "answer": "Workato has received investment from entities including ServiceNow, Altimeter Capital, Insight Partners, and Redpoint Ventures."
-    },
-    {
-    "question": "What international expansion has Workato undertaken in recent years?",
-    "answer": "Workato opened offices in Dublin and Singapore in 2021 and a data center in Australia in 2023."
     },
     {
     "question": "How did Workato adjust its workforce in 2023?",
@@ -5507,10 +5099,6 @@
     {
     "question": "What was the controversy surrounding Nirav Tolia in 2014?",
     "answer": "He was charged with felony hit-and-run for allegedly fleeing a crash, for which he later pled no contest and served community service."
-    },
-    {
-    "question": "What acquisition did Nextdoor make in 2017?",
-    "answer": "The UK local social network service Streetlife."
     },
     {
     "question": "When did Nextdoor become a publicly traded company?",

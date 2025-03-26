@@ -3,6 +3,7 @@ from bs4 import BeautifulSoup
 import os
 import re
 import time
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
 class UnicornScraper:
     HEADERS = {
@@ -11,7 +12,7 @@ class UnicornScraper:
 
     def __init__(self, url):
         self.URL = url
-        self.output_folder = "unicorn_startups_text"
+        self.output_folder = "unicorn_startups"
         os.makedirs(self.output_folder, exist_ok=True)
 
     @staticmethod
@@ -74,19 +75,15 @@ class UnicornScraper:
         if not startup["wiki_url"]:
             return
         
-        retries = 3
+        retries = 2  # Reduce retries to save time
         while retries > 0:
             try:
-                print(f"Fetching: {startup['wiki_url']} (Attempt {4 - retries}/3)")
-                response = requests.get(startup["wiki_url"], headers=self.HEADERS, timeout=10)
+                response = requests.get(startup["wiki_url"], headers=self.HEADERS, timeout=7)
                 if response.status_code == 200:
                     break
-            except requests.exceptions.Timeout:
-                print(f"Timeout for {startup['name']} ({startup['wiki_url']})")
-            except requests.exceptions.RequestException as e:
-                print(f"Request error: {e}")
-            retries -= 1
-            time.sleep(5)
+            except requests.exceptions.RequestException:
+                retries -= 1
+                time.sleep(2)  # Reduce sleep time
 
         if retries == 0:
             print(f"Skipping {startup['name']} due to repeated failures.")
@@ -101,20 +98,23 @@ class UnicornScraper:
             f.write(f"Startup Name: {startup['name']}\n")
             f.write(f"Wiki URL: {startup['wiki_url']}\n\n")
             f.write(full_text)
-        
-        print(f"Saved: {filename}")
 
     def scrape_unicorns(self):
         startups = self.get_unicorn_startups()
-        scraped_files = set(f.split("_")[0] for f in os.listdir(self.output_folder) if f.endswith(".txt"))
+        scraped_files = {f.split("_")[0] for f in os.listdir(self.output_folder) if f.endswith(".txt")}
 
-        for index, startup in enumerate(startups, start=1):
-            if str(index) in scraped_files:
-                print(f"Skipping {index}: {startup['name']} (Already Scraped)")
-                continue
-            
-            print(f"Scraping {index}: {startup['name']}")
-            self.scrape_startup_page(startup, index)
+        with ThreadPoolExecutor(max_workers=10) as executor:  # Adjust threads based on system capability
+            future_to_startup = {
+                executor.submit(self.scrape_startup_page, startup, index): startup
+                for index, startup in enumerate(startups, start=1)
+                if str(index) not in scraped_files
+            }
+
+            for future in as_completed(future_to_startup):
+                try:
+                    future.result()
+                except Exception as e:
+                    print(f"Error scraping {future_to_startup[future]['name']}: {e}")
 
         print("Scraping completed!")
 
@@ -122,4 +122,3 @@ if __name__ == "__main__":
     url = "https://en.wikipedia.org/wiki/List_of_unicorn_startup_companies"
     scraper = UnicornScraper(url)
     scraper.scrape_unicorns()
-    print("Scraping completed! Check 'unicorn_startups_text' folder.")
