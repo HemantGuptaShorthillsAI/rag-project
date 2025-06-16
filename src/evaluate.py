@@ -46,16 +46,9 @@ class LLMModel:
 
     def generate_response(self, prompt, context=""):
         prompt_parts = [
-            f"""You are an expert fact-checking AI. Answer the question **strictly using the context**. 
-            - If the context does not contain the answer, reply with **"I don't know."**
-            - Ensure answers match expected numerical values, names, and key facts.
-            - Give to the point and concise answer no useless explanations and don't extend answers just give dates and figures where asked don't complete sentences.
-
-        ### Context:
-        {context}
-
-        ### Question:
-        {prompt}"""
+            f"""You are an expert fact-checking AI. Answer the question **strictly using the context**. \n            - If the context does not contain the answer, reply with **\"I don't know.\"**\n            - Ensure answers match expected numerical values, names, and key facts.\n            - Give to the point and concise answer no useless explanations and don't extend answers just give dates and figures where asked don't complete sentences.\n
+        ### Context:\n        {context}\n
+        ### Question:\n        {prompt}"""
         ]
         try:
             response = self.model.generate_content(prompt_parts, generation_config=genai.GenerationConfig(temperature=0.1))
@@ -123,8 +116,8 @@ class RAGEvaluator:
         with open(self.dataset_path, "r", encoding="utf-8-sig") as f:
             golden_data = json.load(f)
 
-        num_samples = min(500, len(golden_data))
-        sampled_questions = random.sample(golden_data, num_samples)
+        # num_samples = min(500, len(golden_data))
+        # sampled_questions = random.sample(golden_data, num_samples)
 
         results = []
         csv_columns = [
@@ -134,7 +127,7 @@ class RAGEvaluator:
         
         try:
             i=1
-            for qa in sampled_questions:
+            for qa in golden_data:
                 if i==15:
                     i=1
                     time.sleep(60)
@@ -170,14 +163,14 @@ class RAGEvaluator:
                 results.append(result_entry)
                 i+=1
                 df = pd.DataFrame(results, columns=csv_columns)
-                df.to_csv("../assets/evaluate.csv", index=False, encoding='utf-8-sig',quoting=csv.QUOTE_ALL)
+                df.to_csv("../assets/ev.csv", index=False, encoding='utf-8-sig',quoting=csv.QUOTE_ALL)
                 
                 print("Evaluation completed! Results saved in evaluation.csv")
         
         except KeyboardInterrupt:
             print("\nCtrl + C detected! Saving progress before exiting...")
             df = pd.DataFrame(results,columns=csv_columns)
-            df.to_csv("../assets/evaluate.csv", index=False, encoding='utf-8-sig',quoting=csv.QUOTE_ALL)
+            df.to_csv("../assets/ev.csv", index=False, encoding='utf-8-sig',quoting=csv.QUOTE_ALL)
             print("Final progress saved. Exiting safely.")
 
 
@@ -186,4 +179,3 @@ if __name__ == "__main__":
     WEAVIATE_API_KEY = os.getenv("WEAVIATE_API_KEY")
     evaluator = RAGEvaluator(WEAVIATE_URL, WEAVIATE_API_KEY, model_name="gemini-2.0-flash")
     evaluator.run_evaluation()
-
